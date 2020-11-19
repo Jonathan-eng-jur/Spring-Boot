@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="controller.js">
+	
+</script>
+
+</head>
+<body>
+
+Bem-vindX a nossa Loja de Games <hr>
+	<a href="index.html"> Home </a> |
+	<a href="lista.html"> Lista de Jogos </a> |
+	<a href="inserir.html">Adquirir </a> 
+	<a href="atualizar.html"> Atualizar </a> 
+	
+	<br>
+	
+	<div ng-app="myApp" ng-controller="myCtrl">
+	<table border="1">
+		<tr>
+		
+			<th>id</th>
+			<th>titulo</th>
+			<th>produto</th>
+			<th>data</th>
+			<th>categoria</th>
+			
+		</tr>
+		<tr ng-repeat="jogos in jogos">
+					<td>{{jogos.id}}</td>
+					<td>{{jogos.titulo}}</td>
+					<td>{{jogos.produto}}</td>
+					<td>{{jogos.data}}</td>
+					<td>{{jogos.categoria}}</td>		
+					<td>editar | excluir</td>
+		</tr>
+      
+     </table> 
+
+		</div>
+	
+	
+</body>
+</html>

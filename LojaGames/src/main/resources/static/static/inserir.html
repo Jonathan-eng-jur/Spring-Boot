@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="controller.js">	
+</script>
+</head>
+<body>
+Está é a inserir <hr>
+	<a href="index.html"> Home </a> |
+	<a href="lista.html"> Lista de Jogos </a> |
+	<a href="inserir.html">Adquirir </a> 
+	<a href="atualizar.html"> Atualizar </a> 
+	
+<hr>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+		<form>
+			Id: <br> <input type="number" ng-model="id" readonly> <br>
+
+			Titulo: <br> <input type="text" ng-model="titulo" size="20"
+				placeholder="Digite o titulo"><br> 
+				
+			Produto: <br>
+			<input type="text" ng-model="produto" size="20"
+				placeholder="Produto"><br> 
+				
+			Data:<br> <input
+				type="date" ng-model="data" required> <br> 
+				
+			Categoria:<br>
+			<input type="text" ng-model="categoria" size="20"
+				placeholder="Categoria"><br> 
+			
+			</select> 
+
+		
+			<button ng-click="salvar()">Salvar</button>
+
+		</form>
+	</div>
+
+
+</body>
+</html>
